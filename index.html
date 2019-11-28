@@ -15,37 +15,33 @@
     }
 
     #grid div {
-      height: 100px;
-      width: 100px;
       border: solid 1px black;
     }
     .blue {
       background-color: blue;
+      grid-column: 1/1;
+      grid-row: 2/4;
     }
     .red {
       background-color: red;
+      grid-column: 1/4;
     }
     .green {
       background-color: green;
+      grid-column: 2/4;
+      grid-row: 2/4
     }
     .yellow {
       background-color: yellow;
+      grid-column: 1/4;
     }
   </style>
 </head>
 <body>
   <div id='grid'>
     <div class='red'></div>
-    <div class='red'></div>
-    <div class='red'></div>
     <div class='blue'></div>
     <div class='green'></div>
-    <div class='green'></div>
-    <div class='blue'></div>
-    <div class='green'></div>
-    <div class='green'></div>
-    <div class="yellow"></div>
-    <div class="yellow"></div>
     <div class="yellow"></div>
   </div>
 </body>
