@@ -12,6 +12,11 @@
       grid-template-columns: 1fr 1fr 1fr;
       width: 300px;
       height: 300px;
+      grid-template-areas: 
+        "header header header"
+        "sidebar article article"
+        "sidebar article article"
+        "footer footer footer"
     }
 
     #grid div {
@@ -19,21 +24,25 @@
     }
     .blue {
       background-color: blue;
-      grid-column: 1/1;
-      grid-row: 2/4;
+      /* grid-column: 1/1; */
+      /* grid-row: 2/4; */
+      grid-area: sidebar;
     }
     .red {
       background-color: red;
-      grid-column: 1/4;
+      grid-area: header
+      /* grid-column: 1/4; */
     }
     .green {
       background-color: green;
-      grid-column: 2/4;
-      grid-row: 2/4
+      grid-area: article;
+      /* grid-column: 2/4; */
+      /* grid-row: 2/4 */
     }
     .yellow {
       background-color: yellow;
-      grid-column: 1/4;
+      /* grid-column: 1/4; */
+      grid-area: footer;
     }
   </style>
 </head>
